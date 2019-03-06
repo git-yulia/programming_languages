@@ -1,0 +1,48 @@
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ gcc main.c -o parse parser.c scanner_ad_hoc.c
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ ./parse
+repeat(10 * 7)
+	print hello;
+	print world;
+a = b - 3;
+
+funcProg : funcAssign: ID(a) to INT(0.0)
+
+STARTING at root node program()
+<-Going left! Current node is STATEMENT
+<-Going left! Current node is REPEAT_STMT
+<-Going left! Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is NUMBER, data: 10.0
+->Going right! (Back to root node TERM.) Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is NUMBER, data: 7.0
+->Going right! (Back to root node REPEAT_STMT.) Current node is STATEMENT
+<-Going left! Current node is PRINT_STMT
+<-Going left! Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is IDENTIFIER, data: 'hello'
+->Going right! (Back to root node PROGRAM.) Current node is PROGRAM
+<-Going left! Current node is STATEMENT
+<-Going left! Current node is PRINT_STMT
+<-Going left! Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is IDENTIFIER, data: 'world'
+->Going right! (Back to root node PROGRAM.) Current node is PROGRAM
+<-Going left! Current node is STATEMENT
+<-Going left! Current node is ASSIGN_STMT
+<-Going left! Current node is IDENTIFIER, data: 'a'
+->Going right! (Back to root node ASSIGN_STMT.) Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is IDENTIFIER, data: 'b'
+->Going right! (Back to root node EXPR.) Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is NUMBER, data: 3.0
+
+Parse successful.
+
+yulie@yulie-VirtualBox:~/Desktop/Lab6$

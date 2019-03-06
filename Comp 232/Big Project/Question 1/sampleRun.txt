@@ -1,0 +1,81 @@
+STARTING -------------------
+CREATING FILES WITH: make
+bison -d cilisp.y
+cilisp.y:23 parser name defined to default :"parse"
+flex cilisp.l
+gcc -o cilisp cilisp.c cilisp.tab.c lex.yy.c -g -lm
+
+RUNNING cilisp ++++++++++++
+> exp(3)
+parse error
+error
+> error
+> error
+> error
+> error
+> 3.000000
+> (exp 3)
+20.085537
+> (exp 0)
+1.000000
+> sqrt(25)
+parse error
+error
+> error
+> error
+> error
+> error
+> 25.000000
+> (sqrt 25)
+5.000000
+> (sub 5 1)
+4.000000
+> (mult 6 7)
+42.000000
+> (div 90 10)
+9.000000
+> (mod 100 11)
+parse error
+error
+> error
+> error
+> error
+> 11.000000
+> (remainder 10 9)
+1.000000
+> (log 1)
+0.000000
+> (log 0)
+-inf
+> (log 0)P
+-inf
+> (log 1)
+0.000000
+> (log 900)
+2.954243
+> (pow 3 4)
+81.000000
+> (pow 3 2)
+9.000000
+> (max 40 50)
+50.000000
+> (max 50 40)
+50.000000
+> (min 30 900)
+30.000000
+> (min 90 300)
+90.000000
+>  
+parse error
+error
+> 300.000000
+> quit
+
+STOPPED cilisp ++++++++++++
+
+CLEANING UP FILES WITH: make clean
+rm -R cilisp cilisp.tab.c lex.yy.c cilisp.tab.h cilisp.dSYM
+rm: cannot remove 'cilisp.dSYM': No such file or directory
+Makefile:13: recipe for target 'clean' failed
+make: *** [clean] Error 1
+DONE ------------------------

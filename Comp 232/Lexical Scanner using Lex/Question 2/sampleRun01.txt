@@ -1,0 +1,15 @@
+SAMPLE RUN 1
+
+SIE-1222-00:Desktop julia.maliauka953$ cat l7t2.txt
+
+abc = 420; 
+hello = hi; 
+if (0) then print abc; 
+while (abc) do print abc + 400; 
+if (1) then print hello; 
+
+SIE-1222-00:Desktop julia.maliauka953$ ./lexical < l7t2.txt
+
+{<identifier> abc} , {assignment} , {<number> 420} , {semicolon} , {<identifier> hello} , {assignment} , {<identifier> hi} , {semicolon} , {<keyword> "if"} , {lparen} , {<number> 0} , {rparen} , {<keyword> "then"} , {<keyword> "print"} , {<identifier> abc} , {semicolon} , {<keyword> "while"} , {lparen} , {<identifier> abc} , {rparen} , {<keyword> "do"} , {<keyword> "print"} , {<identifier> abc} , {<addOp> +} , {<number> 400} , {semicolon} , {<keyword> "if"} , {lparen} , {<number> 1} , {rparen} , {<keyword> "then"} , {<keyword> "print"} , {<identifier> hello} , {semicolon} , 
+
+SIE-1222-00:Desktop julia.maliauka953$ 

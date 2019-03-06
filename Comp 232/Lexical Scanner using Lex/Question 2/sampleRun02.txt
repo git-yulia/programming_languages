@@ -1,0 +1,7 @@
+SIE-1222-00:Desktop julia.maliauka953$ ./lexical 
+
+if (abc) then print hello; if (0) then while (abc) print hellNo; 
+
+{<keyword> "if"} , {lparen} , {<identifier> abc} , {rparen} , {<keyword> "then"} , {<keyword> "print"} , {<identifier> hello} , {semicolon} , {<keyword> "if"} , {lparen} , {<number> 0} , {rparen} , {<keyword> "then"} , {<keyword> "while"} , {lparen} , {<identifier> abc} , {rparen} , {<keyword> "print"} , {<identifier> hellNo} , {semicolon} , ^C
+
+SIE-1222-00:Desktop julia.maliauka953$ 

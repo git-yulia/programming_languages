@@ -1,0 +1,29 @@
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ ./parse
+a = 3; a = a * 7;
+
+funcProg : funcAssign: ID(a) to INT(3.0)
+funcProg : funcAssign: ID(a) to INT(0.0)
+
+STARTING at root node program()
+<-Going left! Current node is STATEMENT
+<-Going left! Current node is ASSIGN_STMT
+<-Going left! Current node is IDENTIFIER, data: 'a'
+->Going right! (Back to root node ASSIGN_STMT.) Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is NUMBER, data: 3.0
+->Going right! (Back to root node PROGRAM.) Current node is PROGRAM
+<-Going left! Current node is STATEMENT
+<-Going left! Current node is ASSIGN_STMT
+<-Going left! Current node is IDENTIFIER, data: 'a'
+->Going right! (Back to root node ASSIGN_STMT.) Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is IDENTIFIER, data: 'a'
+->Going right! (Back to root node TERM.) Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is NUMBER, data: 7.0
+
+Parse successful.
+
+yulie@yulie-VirtualBox:~/Desktop/Lab6$

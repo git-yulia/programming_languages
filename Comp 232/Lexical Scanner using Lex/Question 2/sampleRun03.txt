@@ -1,0 +1,18 @@
+SIE-1222-00:Desktop julia.maliauka953$ ./lexical
+
+TESTING ALL CASES
+
+abc = 12; if (1) then abc = 12000; 
+while (abc) do abc = 12; 
+print abc; -12; 
+print helloKevin; 
+print 900000; 
+print 8 % 4; 
+print goodbye;
+
+{<identifier> abc} , {assignment} , {<number> 12} , {semicolon} , {<keyword> "if"} , {lparen} , {<number> 1} , {rparen} , {<keyword> "then"} , {<identifier> abc} , {assignment} , {<number> 12000} , {semicolon} , {<keyword> "while"} , {lparen} , {<identifier> abc} , {rparen} , {<keyword> "do"} , {<identifier> abc} , {assignment} , {<number> 12} , {semicolon} , {<keyword> "print"} , {<identifier> abc} , {semicolon} , {<addOp> -} , {<number> 12} , {semicolon} , {<keyword> "print"} , {<identifier> helloKevin} , {semicolon} , {<keyword> "print"} , {<number> 900000} , {semicolon} , {<keyword> "print"} , {<number> 8} , {<multOp> %} , {<number> 4} , {semicolon} , {<keyword> "print"} , {<identifier> goodbye} , {semicolon} , 
+^C
+
+SIE-1222-00:Desktop julia.maliauka953$ 
+
+

@@ -1,0 +1,89 @@
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ gcc main.c -o parse parser.c scanner_ad_hoc.c
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ ./parse < example.txt
+
+funcProg : funcAssign: ID(firstvar) to INT(1.0)
+funcProg : funcAssign: ID(secondvar) to INT(2.0)
+funcProg : funcAssign: ID(thirdvar) to INT(2.0)
+funcProg : funcAssign: ID(a) to INT(0.0)
+
+STARTING at root node program()
+<-Going left! Current node is STATEMENT
+<-Going left! Current node is ASSIGN_STMT
+<-Going left! Current node is IDENTIFIER, data: 'firstvar'
+->Going right! (Back to root node ASSIGN_STMT.) Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is NUMBER, data: 1.0
+->Going right! (Back to root node PROGRAM.) Current node is PROGRAM
+<-Going left! Current node is STATEMENT
+<-Going left! Current node is ASSIGN_STMT
+<-Going left! Current node is IDENTIFIER, data: 'secondvar'
+->Going right! (Back to root node ASSIGN_STMT.) Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is NUMBER, data: 2.0
+->Going right! (Back to root node PROGRAM.) Current node is PROGRAM
+<-Going left! Current node is STATEMENT
+<-Going left! Current node is REPEAT_STMT
+<-Going left! Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is NUMBER, data: 10.0
+->Going right! (Back to root node REPEAT_STMT.) Current node is STATEMENT
+<-Going left! Current node is ASSIGN_STMT
+<-Going left! Current node is IDENTIFIER, data: 'thirdvar'
+->Going right! (Back to root node ASSIGN_STMT.) Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is NUMBER, data: 2.0
+->Going right! (Back to root node TERM.) Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is IDENTIFIER, data: 'firstvar'
+->Going right! (Back to root node EXPR.) Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is IDENTIFIER, data: 'secondvar'
+->Going right! (Back to root node TERM.) Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is IDENTIFIER, data: 'firstvar'
+->Going right! (Back to root node EXPR.) Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is NUMBER, data: 2.0
+->Going right! (Back to root node PROGRAM.) Current node is PROGRAM
+<-Going left! Current node is STATEMENT
+<-Going left! Current node is REPEAT_STMT
+<-Going left! Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is IDENTIFIER, data: 'firstvar'
+->Going right! (Back to root node EXPR.) Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is NUMBER, data: 2.0
+->Going right! (Back to root node TERM.) Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is IDENTIFIER, data: 'secondvar'
+->Going right! (Back to root node REPEAT_STMT.) Current node is STATEMENT
+<-Going left! Current node is REPEAT_STMT
+<-Going left! Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is IDENTIFIER, data: 'thirdvar'
+->Going right! (Back to root node REPEAT_STMT.) Current node is STATEMENT
+<-Going left! Current node is ASSIGN_STMT
+<-Going left! Current node is IDENTIFIER, data: 'a'
+->Going right! (Back to root node ASSIGN_STMT.) Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is IDENTIFIER, data: 'b'
+
+Parse successful.
+
+yulie@yulie-VirtualBox:~/Desktop/Lab6$

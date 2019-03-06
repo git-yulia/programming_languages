@@ -1,0 +1,202 @@
+Sample Run Prompts:
+tunes(All).    ; displays all of the tunes created by all of the artists.
+
+| ?- tunes('KScrivs').
+Prolog Prologue
+L33t Beats
+I teach the lab section of 232
+Teachin those kids a lesson
+Tangarang
+9GAG 4 LIF3
+I punched a dolphin
+Where ma Tang at?
+Calc 1 and Done
+Prolog Epilogue Monologue
+
+| ?- bitrates('Untitled 01').
+550
+333
+790
+
+| ?- tunes('Tool').
+Skizm
+Fourth Eye
+Rosetta Boned
+Hooters banned me in Louisiana
+DMT Brunch
+Parabolic Yeast Infection
+The Grunge
+Burning man changed my life
+The government is gonna take our third eyes
+RIP Bill Hicks
+Syke-o on my Trike-o
+Who let the dogs out of their existential nightmare
+Why are my hands warping
+Schism
+The Pots and Pans
+Vicarious is a Big Word, Jimmy
+Untitled 01
+Wings for Me (Pt 1)
+Wings for Me (Pt 2)
+So long and thanks for all the hoes
+
+| ?- encodings('Untitled 01').
+Jpeg
+Mpeg-4
+Apple lossless
+
+
+| ?- tracklist('Third Eyes and Five Wives').
+Skizm
+Fourth Eye
+Rosetta Boned
+Hooters banned me in Louisiana
+DMT Brunch
+Parabolic Yeast Infection
+The Grunge
+Burning man changed my life
+The government is gonna take our third eyes
+RIP Bill Hicks
+
+
+% This function reports all artists performing the same tunes
+| ?- songs('Untitled 01').
+Tool played Untitled 01 on the 10,000 Hoes album.
+Streetlight Manifesto played Untitled 01 on the Communism? album.
+Papa Roach played Untitled 01 on the Death Motorcycle album.
+
+| ?- songs('Schism').
+Tool played Schism on the 10,000 Hoes album.
+
+| ?- groupies('Ska').
+Reel Big Fish is a good example of a Ska artist.
+Reel Big Fish is a good example of a Ska artist.
+Reel Big Fish is a good example of a Ska artist.
+Streetlight Manifesto is a good example of a Ska artist.
+Streetlight Manifesto is a good example of a Ska artist.
+Streetlight Manifesto is a good example of a Ska artist.
+Streetlight Manifesto is a good example of a Ska artist.
+Connor Ska-sborn is a good example of a Ska artist.
+Connor Ska-sborn is a good example of a Ska artist.
+Connor Ska-sborn is a good example of a Ska artist.
+
+| ?- bitrate(300).
+Parabolic Yeast Infection
+The Grunge
+Burning man changed my life
+The government is gonna take our third eyes
+RIP Bill Hicks
+Syke-o on my Trike-o
+Who let the dogs out of their existential nightmare
+Why are my hands warping
+Schism
+The Pots and Pans
+Vicarious is a Big Word, Jimmy
+Untitled 01
+Wings for Me (Pt 1)
+Wings for Me (Pt 2)
+So long and thanks for all the hoes
+Is that a trombone in your pants, et. al
+Donald Trumpet Theme 03
+God is a trombonist
+Untitled 01
+Marx
+Russia
+Cold War Blues
+IT is a Science, Too
+Crushed IT
+Yulia Sucks
+Cut My Life Into Pieces
+Sadness makes me happy
+My mother didnt accept me as a teen
+I have latent homosexual feelings
+Cut My Mom Into Pieces
+I do Prolog to alleviate depression
+Prolog is like Prozac, but cheaper
+Cut My homework Into Pieces
+Untitled 01
+The folly of mankind
+
+no
+| ?- bitrate(1000).
+
+no
+| ?- bitrate(600).
+Cut My Life Into Pieces
+Sadness makes me happy
+My mother didnt accept me as a teen
+I have latent homosexual feelings
+Cut My Mom Into Pieces
+I do Prolog to alleviate depression
+Prolog is like Prozac, but cheaper
+Cut My homework Into Pieces
+Untitled 01
+The folly of mankind
+
+no
+| ?-
+
+| ?- genre('Ska').
+Is that a trombone in your pants, et. al is a good example of a Ska track.
+Donald Trumpet Theme 03 is a good example of a Ska track.
+God is a trombonist is a good example of a Ska track.
+Untitled 01 is a good example of a Ska track.
+Marx is a good example of a Ska track.
+Russia is a good example of a Ska track.
+Cold War Blues is a good example of a Ska track.
+IT is a Science, Too is a good example of a Ska track.
+Crushed IT is a good example of a Ska track.
+Yulia Sucks is a good example of a Ska track.
+
+| ?- genre('Trash').
+Skizm is a good example of a Trash track.
+Fourth Eye is a good example of a Trash track.
+Rosetta Boned is a good example of a Trash track.
+Hooters banned me in Louisiana is a good example of a Trash track.
+DMT Brunch is a good example of a Trash track.
+Parabolic Yeast Infection is a good example of a Trash track.
+The Grunge is a good example of a Trash track.
+Burning man changed my life is a good example of a Trash track.
+The government is gonna take our third eyes is a good example of a Trash track.
+RIP Bill Hicks is a good example of a Trash track.
+Cut My Life Into Pieces is a good example of a Trash track.
+Sadness makes me happy is a good example of a Trash track.
+My mother didnt accept me as a teen is a good example of a Trash track.
+I have latent homosexual feelings is a good example of a Trash track.
+Cut My Mom Into Pieces is a good example of a Trash track.
+I do Prolog to alleviate depression is a good example of a Trash track.
+Prolog is like Prozac, but cheaper is a good example of a Trash track.
+Cut My homework Into Pieces is a good example of a Trash track.
+Untitled 01 is a good example of a Trash track.
+The folly of mankind is a good example of a Trash track.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%

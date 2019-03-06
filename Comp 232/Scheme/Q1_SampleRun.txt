@@ -1,0 +1,19 @@
+QUESTION 1 - Apply a function to a list using maps 
+SAMPLE RUNS 
+
+(1) 
+
+scheme@(ice-9 r5rs) [1]> (load "Q1.scm") (lambda (x) (+ 3 x)) (1 2 3 4 5)
+;;; note: source file /mnt/c/Users/Yulie/Documents/Comp 232/Scheme/Q1.scm
+;;;       newer than compiled /home/yules/.cache/guile/ccache/2.0-LE-8-2.0/mnt/c/Users/Yulie/Documents/Comp 232/Scheme/Q1.scm.go
+;;; note: auto-compilation is enabled, set GUILE_AUTO_COMPILE=0
+;;;       or pass the --no-auto-compile argument to disable.
+;;; compiling /mnt/c/Users/Yulie/Documents/Comp 232/Scheme/Q1.scm
+;;; compiled /home/yules/.cache/guile/ccache/2.0-LE-8-2.0/mnt/c/Users/Yulie/Documents/Comp 232/Scheme/Q1.scm.go
+$4 = (4 5 6 7 8)
+scheme@(ice-9 r5rs) [1]>
+
+(2)
+
+scheme@(guile-user)> (load "Q1.scm") (lambda (x) (- (+ 50 x) (- 15 x))) (10 20 30 40 50)
+$5 = (55 75 95 115 135)

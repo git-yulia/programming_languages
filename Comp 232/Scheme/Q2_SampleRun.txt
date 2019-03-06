@@ -1,0 +1,76 @@
+QUESTION 2 SAMPLE RUNS 
+
+(1) -> For these runs, input.txt contains the same DFA as in the original dfa.scm file. 
+
+scheme@(guile-user)> (load "dfa.scm") (test3)
+Enter a new DFA
+"input.txt"
+Enter a string to check
+(0 1 0 0 1 0)
+$18 = (q0 q2 q3 q1 q3 q2 q0 accept)
+
+(2)
+
+Enter a new DFA
+"input.txt"
+Enter a string to check
+(0 1 1 0 1)
+$24 = (q0 q2 q3 q2 q0 q1 reject)
+
+(3) -> new DFA in file. 
+> more input.txt
+(q0
+   (((q0 1) q2) ((q0 0) q1) ((q1 1) q3) ((q1 0) q0)
+    ((q2 1) q0) ((q2 0) q3) ((q3 1) q1) ((q3 0) q2))
+   (q0))
+
+scheme@(guile-user)> (load "dfa.scm") (test3)
+Enter the filename to pull the DFA from:
+"input.txt"
+Enter a string to check:
+(1 1)
+$2 = (q0 q2 q0 accept)
+
+(4) -> same DFA as for #3 
+scheme@(guile-user)> (load "dfa.scm") (test3)
+Enter the filename to pull the DFA from:
+"input.txt"
+Enter a string to check:
+(0 1 0 0 0 0 0 0 0 1)
+$8 = (q0 q1 q3 q2 q3 q2 q3 q2 q3 q2 q0 accept)
+
+(5) -> same DFA as for #3 
+scheme@(guile-user)> (load "dfa.scm") (test3)
+Enter the filename to pull the DFA from:
+"input.txt"
+Enter a string to check:
+(0 1 0 0 0 1)
+$1 = (q0 q1 q3 q2 q3 q2 q0 accept)
+
+
+Fun fact: I actually had my mom enter a string to check, and by some miracle, it accepted it. 
+
+
+
+
+
+PART II of Question 2: Get the program to ask for a start state and the input string from stdio. 
+
+(1)
+scheme@(guile-user)>  (load "dfa.scm") (main)
+Enter the filename to pull the DFA from:
+"input.txt"
+Enter a string to check:
+(1 1)
+(q0 q2 q0 accept)
+Would you like to go again? [y/n]
+"y"
+Enter the filename to pull the DFA from:
+"input.txt"
+Enter a string to check:
+(1 0)
+(q0 q2 q3 reject)
+Would you like to go again? [y/n]
+n
+
+scheme@(guile-user)>

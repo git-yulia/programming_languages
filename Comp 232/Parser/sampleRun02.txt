@@ -1,0 +1,27 @@
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ gcc main.c -o parse parser.c scanner_ad_hoc.c
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ ./parse
+print (a = b);
+
+Parser error. Returned (1)
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ ./parse
+print (a + b);
+
+
+STARTING at root node program()
+<-Going left! Current node is STATEMENT
+<-Going left! Current node is PRINT_STMT
+<-Going left! Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is IDENTIFIER, data: 'a'
+->Going right! (Back to root node EXPR.) Current node is EXPR
+<-Going left! Current node is TERM
+<-Going left! Current node is FACTOR
+<-Going left! Current node is IDENTIFIER, data: 'b'
+
+Parse successful.
+
+yulie@yulie-VirtualBox:~/Desktop/Lab6$

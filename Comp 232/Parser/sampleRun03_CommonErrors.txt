@@ -1,0 +1,31 @@
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ gcc main.c -o parse parser.c scanner_ad_hoc.c
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ ./parse
+gibberish blah print(420) !!!
+
+Parser error. Returned (1)
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ ./parse
+fprint()^[[
+
+Parser error. Returned (1)
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ ./parse
+fprint(b00ts);
+
+Parser error. Returned (1)
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ ./parse
+repeat(1000)
+
+Parser error. Returned (1)
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ ./parse
+repeat(1
+
+Parser error. Returned (1)
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ ./parse
+a = a = a;
+
+funcProg : funcAssign: ID(a) to INT(0.0)
+Parser error. Returned (1)
+yulie@yulie-VirtualBox:~/Desktop/Lab6$ ./parse
+1 = a;
+
+Parser error. Returned (1)
+yulie@yulie-VirtualBox:~/Desktop/Lab6$

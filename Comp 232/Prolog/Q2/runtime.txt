@@ -1,0 +1,134 @@
+Cut My homework Into Pieces
+Untitled 01
+The folly of mankind
+
+no
+| ?- [pandorify].
+compiling /mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl for byte code...
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl:32-36: warning: singleton variables [Album,Genre,Format,Bitrate] for tune/1
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl:36:27: syntax error: . or operator expected after expression
+        1 error(s)
+compilation failed
+
+no
+| ?- [pandorify].
+compiling /mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl for byte code...
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl:32-36: warning: singleton variables [Album,Genre,Format,Bitrate] for tune/1
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl:38: warning: singleton variables [Artist] for tune/1
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl compiled, 52 lines read - 3836 bytes written, 16 ms
+
+yes
+| ?- tune('Papa Roach').
+Cut My Life Into Pieces
+Sadness makes me happy
+My mother didnt accept me as a teen
+I have latent homosexual feelings
+Cut My Mom Into Pieces
+I do Prolog to alleviate depression
+Prolog is like Prozac, but cheaper
+Cut My homework Into Pieces
+Untitled 01
+The folly of mankind
+
+yes
+| ?- tune('Papa Roach').
+Cut My Life Into Pieces
+Sadness makes me happy
+My mother didnt accept me as a teen
+I have latent homosexual feelings
+Cut My Mom Into Pieces
+I do Prolog to alleviate depression
+Prolog is like Prozac, but cheaper
+Cut My homework Into Pieces
+Untitled 01
+The folly of mankind
+
+yes
+| ?- tune('Tool').
+
+yes
+| ?- [pandorify].
+compiling /mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl for byte code...
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl:32-34: warning: singleton variables [Album,Genre,Format,Bitrate] for tune/1
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl compiled, 50 lines read - 3802 bytes written, 16 ms
+
+yes
+| ?- tune('Tool').
+
+no
+| ?- tune('Papa Roach').
+Cut My Life Into Pieces
+Sadness makes me happy
+My mother didnt accept me as a teen
+I have latent homosexual feelings
+Cut My Mom Into Pieces
+I do Prolog to alleviate depression
+Prolog is like Prozac, but cheaper
+Cut My homework Into Pieces
+Untitled 01
+The folly of mankind
+
+no
+| ?- tracklist('Death Motorcycle').
+uncaught exception: error(existence_error(procedure,tracklist/1),top_level/0)
+| ?- [pandorify].
+compiling /mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl for byte code...
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl:32-34: warning: singleton variables [Album,Genre,Format,Bitrate] for tune/1
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl:36: warning: singleton variables [Artist] for tune/1
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl:39-41: warning: singleton variables [Tune,Artist,Genre,Format,Bitrate] for tracklist/1
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl:43: warning: singleton variables [Album] for tracklist/1
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl compiled, 55 lines read - 4254 bytes written, 15 ms
+
+yes
+| ?- tracklist('Death Motorcycle').
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+
+yes
+| ?- tracklist('Death Motorcycle').
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+Death Motorcycle
+
+yes
+| ?- [pandorify].
+compiling /mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl for byte code...
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl:32-34: warning: singleton variables [Album,Genre,Format,Bitrate] for tune/1
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl:36: warning: singleton variables [Artist] for tune/1
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl:39-41: warning: singleton variables [Artist,Genre,Format,Bitrate] for tracklist/1
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl:43: warning: singleton variables [Album] for tracklist/1
+/mnt/c/Users/conno/Desktop/Yulia/Prolog/pandorify.pl compiled, 55 lines read - 4237 bytes written, 16 ms
+
+yes
+| ?- tracklist('Death Motorcycle').
+Cut My Life Into Pieces
+Sadness makes me happy
+My mother didnt accept me as a teen
+I have latent homosexual feelings
+Cut My Mom Into Pieces
+I do Prolog to alleviate depression
+Prolog is like Prozac, but cheaper
+Cut My homework Into Pieces
+Untitled 01
+The folly of mankind
+
+yes
+| ?-
+
+
+

@@ -1,0 +1,24 @@
+RUNNING cilisp ++++++++++++
+> (add (add 1 5) 8)
+Computation resulted in 14.000000
+> (sub (max 40 50) (min 40 50))
+Computation resulted in 10.000000
+> (sub (min 40 50) (max 40 50))
+Computation resulted in -10.000000
+> (div (add 5 (sqrt 25)) (sqrt 4))
+Computation resulted in 5.000000
+
+
+SAMPLE RUN 2
+
+RUNNING cilisp ++++++++++++
+> (add (hypot 3 4) (cbrt 8))
+Computation resulted in 7.000000
+> (add (hypot 32 67) (cbrt 1000))
+Computation resulted in 84.249579
+> (sub (sub (sub (sub (add 1 2) 2) 2) 2) 2)
+Computation resulted in -5.000000
+> (div (add 1 2) 2)
+Computation resulted in 1.500000
+> quit
+

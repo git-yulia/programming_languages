@@ -1,0 +1,81 @@
+SAMPLE RUNS 
+Question 1
+
+yes
+| ?- [moves].
+compiling /Users/julia.maliauka953/Desktop/Prolog/moves.pl for byte code...
+/Users/julia.maliauka953/Desktop/Prolog/moves.pl compiled, 23 lines read - 1289 bytes written, 3 ms
+warning: /Users/julia.maliauka953/Desktop/Prolog/moves.pl:1: redefining procedure start/1
+         /Users/julia.maliauka953/Desktop/Prolog/dfa.pl:2: previous definition
+warning: /Users/julia.maliauka953/Desktop/Prolog/moves.pl:5: redefining procedure move/3
+         /Users/julia.maliauka953/Desktop/Prolog/dfa.pl:1: previous definition
+
+(1 ms) yes
+| ?- parse([0,1,1,1]).
+st0  [0,1,1,1]
+st2  [1,1,1]
+st3  [1,1]
+st1  [1]
+st0  []
+Word accepted by the automaton.
+
+true ? y
+Action (; for next solution, a for all solutions, RET to stop) ? ;
+
+| ?- parse([0,1,0,0]).
+st0  [0,1,0,0]
+st2  [1,0,0]
+st3  [0,0]
+st2  [0]
+st0  []
+Word accepted by the automaton.
+
+yes
+| ?- parse([0,1,0,1,0,1,1,1]).
+st0  [0,1,0,1,0,1,1,1]
+st2  [1,0,1,0,1,1,1]
+st3  [0,1,0,1,1,1]
+st2  [1,0,1,1,1]
+st3  [0,1,1,1]
+st2  [1,1,1]
+st3  [1,1]
+st1  [1]
+st0  []
+Word accepted by the automaton.
+
+
+
+					REJECT CASES
+
+| ?- parse([0,0,0,0,0,0,0,1]).
+st0  [0,0,0,0,0,0,0,1]
+st2  [0,0,0,0,0,0,1]
+st0  [0,0,0,0,0,1]
+st2  [0,0,0,0,1]
+st0  [0,0,0,1]
+st2  [0,0,1]
+st0  [0,1]
+st2  [1]
+Word rejected by the automaton.
+
+
+yes
+| ?- parse([a,a]).     
+Word rejected by the automaton.
+
+yes
+| ?- parse([goo,goo,goo]).
+Word rejected by the automaton.
+
+| ?- parse([1,1,1,1,1,1,0,0,1]).
+st0  [1,1,1,1,1,1,0,0,1]
+st1  [1,1,1,1,1,0,0,1]
+st0  [1,1,1,1,0,0,1]
+st1  [1,1,1,0,0,1]
+st0  [1,1,0,0,1]
+st1  [1,0,0,1]
+st0  [0,0,1]
+st2  [0,1]
+st0  [1]
+Word rejected by the automaton.
+
